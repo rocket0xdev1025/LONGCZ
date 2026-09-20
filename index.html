@@ -54,7 +54,10 @@
       --cz-glasses: #e8943a;
     }
 
-    html { scroll-behavior: smooth; }
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 5.5rem;
+    }
 
     body {
       font-family: "Space Grotesk", sans-serif;
@@ -83,11 +86,15 @@
     }
 
     .hero-banner {
-      background-image:
-        linear-gradient(90deg, rgba(8, 16, 31, 0.92) 0%, rgba(12, 26, 51, 0.72) 42%, rgba(12, 26, 51, 0.18) 100%),
-        url("banner.jpg");
-      background-size: cover;
-      background-position: center;
+      background:
+        radial-gradient(ellipse at 78% 45%, rgba(240, 185, 11, 0.22), transparent 42%),
+        radial-gradient(ellipse at 12% 80%, rgba(232, 148, 58, 0.1), transparent 40%),
+        linear-gradient(115deg, #08101f 0%, #0c1a33 46%, #1a2744 72%, #c9a227 160%);
+    }
+
+    .pixelated {
+      image-rendering: pixelated;
+      image-rendering: crisp-edges;
     }
 
     .gold-glow {
@@ -246,7 +253,7 @@
   <header class="fixed top-0 inset-x-0 z-50 border-b border-[#F0B90B]/20 bg-[#0B0E11]/80 backdrop-blur-md">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 h-[72px] flex items-center justify-between gap-4">
       <a href="#top" class="flex items-center gap-3 min-w-0">
-        <img src="logo.png" alt="LOOOOOONG CZ logo" class="h-12 w-auto pixel-frame bg-[#C9A227]" />
+        <img src="logo.png" alt="LOOOOOONG CZ logo" class="pixelated h-12 w-auto pixel-frame bg-[#C9A227]" />
         <div class="min-w-0">
           <p class="font-display text-bn-yellow text-sm sm:text-base tracking-wider leading-none truncate">LOOOOOONG CZ</p>
           <p class="font-pixel text-[8px] text-cz-peach mt-1 tracking-widest">$LOOOOOONG CZ</p>
@@ -263,7 +270,7 @@
         <a href="https://x.com/LOOOOOONGCZ" target="_blank" rel="noopener noreferrer" class="h-10 w-10 overflow-hidden border-2 border-bn-yellow hover:scale-105 transition-transform" aria-label="Twitter / X">
           <img src="x.png" alt="X" class="h-full w-full object-cover" />
         </a>
-        <a href="https://flap.sh/bnb/TBA" target="_blank" rel="noopener noreferrer" class="pixel-btn hidden sm:inline-flex items-center bg-bn-yellow text-cz-ink font-pixel text-[9px] px-4 py-3">
+        <a href="https://flap.sh/bnb/0x584d41b0f6cfaf412b9aab613186c7ef58007777" target="_blank" rel="noopener noreferrer" class="pixel-btn inline-flex items-center bg-bn-yellow text-cz-ink font-pixel text-[8px] sm:text-[9px] px-3 sm:px-4 py-2.5 sm:py-3">
           BUY NOW
         </a>
       </div>
@@ -271,9 +278,12 @@
   </header>
 
   <main id="top" class="relative z-10">
-    <section class="hero-banner min-h-screen pt-24 pb-16 flex items-end">
-      <div class="mx-auto max-w-7xl px-4 sm:px-6 w-full grid lg:grid-cols-[1.15fr_0.85fr] gap-10 items-end">
-        <div class="pb-6">
+    <section class="hero-banner min-h-[100svh] pt-24 pb-16 flex items-center relative overflow-hidden">
+      <span class="diamond absolute top-28 left-[8%] opacity-70 hidden md:block"></span>
+      <span class="diamond absolute top-40 right-[42%] opacity-40 hidden lg:block"></span>
+      <span class="diamond absolute bottom-24 left-[36%] opacity-50 hidden md:block"></span>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 w-full grid lg:grid-cols-[1.05fr_0.95fr] gap-10 items-center relative">
+        <div class="py-6">
           <div class="inline-flex items-center gap-3 mb-6">
             <span class="diamond"></span>
             <span class="font-pixel text-[8px] sm:text-[10px] text-bn-yellow tracking-[0.35em]">BNB CHAIN MEME</span>
@@ -292,7 +302,7 @@
           <div class="mt-8 gold-glow bg-bn-deep/80 border border-bn-yellow/40 p-3 sm:p-4 max-w-xl">
             <p class="font-pixel text-[8px] text-bn-yellow mb-2 tracking-widest">CONTRACT ADDRESS</p>
             <div class="flex items-center gap-2">
-              <code id="ca-text" class="flex-1 truncate font-body text-sm sm:text-base text-cz-skin">TBA</code>
+              <code id="ca-text" class="flex-1 truncate font-body text-sm sm:text-base text-cz-skin">0x584d41b0f6cfaf412b9aab613186c7ef58007777</code>
               <button id="copy-ca" type="button" class="shrink-0 bg-bn-yellow text-cz-ink font-pixel text-[8px] px-3 py-2 pixel-btn">
                 COPY
               </button>
@@ -300,22 +310,22 @@
           </div>
 
           <div class="mt-6 flex flex-wrap gap-3">
-            <a href="https://flap.sh/bnb/TBA" target="_blank" rel="noopener noreferrer" class="pixel-btn inline-flex items-center justify-center bg-bn-yellow text-cz-ink font-pixel text-[10px] px-6 py-4">
+            <a href="https://flap.sh/bnb/0x584d41b0f6cfaf412b9aab613186c7ef58007777" target="_blank" rel="noopener noreferrer" class="pixel-btn inline-flex items-center justify-center bg-bn-yellow text-cz-ink font-pixel text-[10px] px-6 py-4">
               BUY NOW
             </a>
-            <a href="https://dexscreener.com/bsc/TBA" target="_blank" rel="noopener noreferrer" class="pixel-btn pixel-btn-ghost inline-flex items-center justify-center bg-transparent text-bn-yellow border border-bn-yellow font-pixel text-[10px] px-6 py-4">
+            <a href="https://dexscreener.com/bsc/0x584d41b0f6cfaf412b9aab613186c7ef58007777" target="_blank" rel="noopener noreferrer" class="pixel-btn pixel-btn-ghost inline-flex items-center justify-center bg-transparent text-bn-yellow border border-bn-yellow font-pixel text-[10px] px-6 py-4">
               CHART
             </a>
-            <a href="#howtobuy" class="inline-flex items-center justify-center text-cz-peach font-pixel text-[10px] px-4 py-4 hover:text-bn-yellow transition-colors">
-              HOW TO BUY →
+            <a href="#howtobuy" class="inline-flex items-center justify-center text-cz-peach font-pixel text-[10px] px-4 py-4 hover:text-bn-yellow transition-colors whitespace-nowrap">
+              HOW TO BUY &gt;&gt;
             </a>
           </div>
         </div>
 
-        <div class="hidden lg:flex justify-center items-end pb-4">
+        <div class="flex justify-center lg:justify-end">
           <div class="relative float-mascot">
-            <div class="absolute -inset-8 rounded-full bg-bn-yellow/10 blur-3xl"></div>
-            <img src="logo.png" alt="LOOOOOONG CZ mascot" class="relative stretch-mascot h-[62vh] max-h-[720px] w-auto pixel-frame bg-[#C9A227]" />
+            <div class="absolute -inset-10 rounded-full bg-bn-yellow/15 blur-3xl"></div>
+            <img src="logo.png" alt="LOOOOOONG CZ mascot" class="relative pixelated stretch-mascot h-[42vh] sm:h-[52vh] lg:h-[68vh] max-h-[760px] w-auto pixel-frame bg-[#C9A227]" />
           </div>
         </div>
       </div>
@@ -342,43 +352,40 @@
       </div>
     </div>
 
-    <section id="about" class="relative py-20 sm:py-28">
+    <section id="about" class="relative py-16 sm:py-24">
       <div class="mx-auto max-w-7xl px-4 sm:px-6">
-        <div class="grid lg:grid-cols-2 gap-12 items-center">
-          <div class="relative">
-            <div class="absolute -top-4 -left-4 diamond"></div>
-            <div class="absolute -bottom-4 -right-4 diamond"></div>
-            <img src="banner.jpg" alt="LOOOOOONG CZ banner" class="w-full pixel-frame object-cover" />
+        <div class="relative mb-16">
+          <div class="absolute -top-3 -left-3 diamond hidden sm:block"></div>
+          <div class="absolute -bottom-3 -right-3 diamond hidden sm:block"></div>
+          <img src="banner.jpg" alt="LOOOOOONG CZ banner" class="w-full pixel-frame object-cover max-h-[420px]" />
+        </div>
+
+        <div class="max-w-4xl mx-auto text-center">
+          <p class="font-pixel text-[9px] text-bn-yellow tracking-[0.3em] mb-4">THE INFINITE STRETCH</p>
+          <h2 class="font-display text-3xl sm:text-5xl text-cz-cream leading-tight">
+            Too long. <span class="text-bn-yellow">Never enough.</span>
+          </h2>
+          <p class="mt-6 text-lg text-cz-peach leading-relaxed">
+            LOOOOOONG CZ stretches crypto meme energy to infinity, bringing endless vibes, massive memes, and moonbound chaos. One elongated legend. One BNB-powered meme. Zero chill, maximum length.
+          </p>
+        </div>
+
+        <div class="mt-10 grid grid-cols-2 lg:grid-cols-4 gap-3">
+          <div class="bg-bn-panel/80 border border-bn-yellow/25 p-4">
+            <p class="font-pixel text-[8px] text-cz-glasses mb-2">NAME</p>
+            <p class="font-display text-bn-yellow text-sm sm:text-base break-all">LOOOOOONG CZ</p>
           </div>
-
-          <div>
-            <p class="font-pixel text-[9px] text-bn-yellow tracking-[0.3em] mb-4">THE INFINITE STRETCH</p>
-            <h2 class="font-display text-3xl sm:text-5xl text-cz-cream leading-tight">
-              Too long.<br />
-              <span class="text-bn-yellow">Never enough.</span>
-            </h2>
-            <p class="mt-6 text-lg text-cz-peach leading-relaxed">
-              LOOOOOONG CZ stretches crypto meme energy to infinity, bringing endless vibes, massive memes, and moonbound chaos. One elongated legend. One BNB-powered meme. Zero chill, maximum length.
-            </p>
-
-            <div class="mt-8 grid grid-cols-2 gap-3">
-              <div class="bg-bn-panel/80 border border-bn-yellow/25 p-4">
-                <p class="font-pixel text-[8px] text-cz-glasses mb-2">NAME</p>
-                <p class="font-display text-bn-yellow text-sm sm:text-base">LOOOOOONG CZ</p>
-              </div>
-              <div class="bg-bn-panel/80 border border-bn-yellow/25 p-4">
-                <p class="font-pixel text-[8px] text-cz-glasses mb-2">SYMBOL</p>
-                <p class="font-display text-bn-yellow text-sm sm:text-base">LOOOOOONG CZ</p>
-              </div>
-              <div class="bg-bn-panel/80 border border-bn-yellow/25 p-4">
-                <p class="font-pixel text-[8px] text-cz-glasses mb-2">CHAIN</p>
-                <p class="font-display text-cz-skin text-sm sm:text-base">BNB SMART CHAIN</p>
-              </div>
-              <div class="bg-bn-panel/80 border border-bn-yellow/25 p-4">
-                <p class="font-pixel text-[8px] text-cz-glasses mb-2">LENGTH</p>
-                <p class="font-display text-cz-skin text-sm sm:text-base">INFINITE</p>
-              </div>
-            </div>
+          <div class="bg-bn-panel/80 border border-bn-yellow/25 p-4">
+            <p class="font-pixel text-[8px] text-cz-glasses mb-2">SYMBOL</p>
+            <p class="font-display text-bn-yellow text-sm sm:text-base break-all">LOOOOOONG CZ</p>
+          </div>
+          <div class="bg-bn-panel/80 border border-bn-yellow/25 p-4">
+            <p class="font-pixel text-[8px] text-cz-glasses mb-2">CHAIN</p>
+            <p class="font-display text-cz-skin text-sm sm:text-base">BNB SMART CHAIN</p>
+          </div>
+          <div class="bg-bn-panel/80 border border-bn-yellow/25 p-4">
+            <p class="font-pixel text-[8px] text-cz-glasses mb-2">LENGTH</p>
+            <p class="font-display text-cz-skin text-sm sm:text-base">INFINITE</p>
           </div>
         </div>
       </div>
@@ -393,25 +400,25 @@
         </div>
 
         <div class="mt-14 grid sm:grid-cols-2 xl:grid-cols-4 gap-5">
-          <article class="step-card group bg-bn-panel border border-bn-yellow/20 p-6 hover:border-bn-yellow/70 transition-colors">
+          <article class="step-card group bg-bn-panel border border-bn-yellow/20 border-l-4 border-l-bn-yellow p-6 hover:border-bn-yellow/70 transition-colors">
             <div class="step-num font-pixel text-[11px] w-12 h-12 flex items-center justify-center bg-cz-mustard/20 text-bn-yellow border border-bn-yellow/40 mb-6 transition-colors">01</div>
             <h3 class="font-display text-xl text-bn-yellow mb-3">Get a Wallet</h3>
             <p class="text-cz-peach leading-relaxed">Install MetaMask or Trust Wallet. Switch the network to BNB Smart Chain so you are ready for the stretch.</p>
           </article>
 
-          <article class="step-card group bg-bn-panel border border-bn-yellow/20 p-6 hover:border-bn-yellow/70 transition-colors">
+          <article class="step-card group bg-bn-panel border border-bn-yellow/20 border-l-4 border-l-bn-yellow p-6 hover:border-bn-yellow/70 transition-colors">
             <div class="step-num font-pixel text-[11px] w-12 h-12 flex items-center justify-center bg-cz-mustard/20 text-bn-yellow border border-bn-yellow/40 mb-6 transition-colors">02</div>
             <h3 class="font-display text-xl text-bn-yellow mb-3">Load BNB</h3>
             <p class="text-cz-peach leading-relaxed">Buy BNB on Binance or another exchange, then send it to your wallet on BNB Smart Chain.</p>
           </article>
 
-          <article class="step-card group bg-bn-panel border border-bn-yellow/20 p-6 hover:border-bn-yellow/70 transition-colors">
+          <article class="step-card group bg-bn-panel border border-bn-yellow/20 border-l-4 border-l-bn-yellow p-6 hover:border-bn-yellow/70 transition-colors">
             <div class="step-num font-pixel text-[11px] w-12 h-12 flex items-center justify-center bg-cz-mustard/20 text-bn-yellow border border-bn-yellow/40 mb-6 transition-colors">03</div>
             <h3 class="font-display text-xl text-bn-yellow mb-3">Open Flap.sh</h3>
             <p class="text-cz-peach leading-relaxed">Hit Buy Now, connect your wallet, and paste the $LOOOOOONG CZ contract address when it goes live.</p>
           </article>
 
-          <article class="step-card group bg-bn-panel border border-bn-yellow/20 p-6 hover:border-bn-yellow/70 transition-colors">
+          <article class="step-card group bg-bn-panel border border-bn-yellow/20 border-l-4 border-l-bn-yellow p-6 hover:border-bn-yellow/70 transition-colors">
             <div class="step-num font-pixel text-[11px] w-12 h-12 flex items-center justify-center bg-cz-mustard/20 text-bn-yellow border border-bn-yellow/40 mb-6 transition-colors">04</div>
             <h3 class="font-display text-xl text-bn-yellow mb-3">Swap & Stretch</h3>
             <p class="text-cz-peach leading-relaxed">Swap BNB for $LOOOOOONG CZ, confirm the transaction, and join the endless, moonbound chaos.</p>
@@ -419,8 +426,8 @@
         </div>
 
         <div class="mt-10 flex flex-wrap justify-center gap-3">
-          <a href="https://flap.sh/bnb/TBA" target="_blank" rel="noopener noreferrer" class="pixel-btn inline-flex bg-bn-yellow text-cz-ink font-pixel text-[10px] px-6 py-4">BUY NOW</a>
-          <a href="https://dexscreener.com/bsc/TBA" target="_blank" rel="noopener noreferrer" class="pixel-btn pixel-btn-ghost inline-flex bg-transparent text-bn-yellow border border-bn-yellow font-pixel text-[10px] px-6 py-4">CHART</a>
+          <a href="https://flap.sh/bnb/0x584d41b0f6cfaf412b9aab613186c7ef58007777" target="_blank" rel="noopener noreferrer" class="pixel-btn inline-flex bg-bn-yellow text-cz-ink font-pixel text-[10px] px-6 py-4">BUY NOW</a>
+          <a href="https://dexscreener.com/bsc/0x584d41b0f6cfaf412b9aab613186c7ef58007777" target="_blank" rel="noopener noreferrer" class="pixel-btn pixel-btn-ghost inline-flex bg-transparent text-bn-yellow border border-bn-yellow font-pixel text-[10px] px-6 py-4">CHART</a>
         </div>
       </div>
     </section>
@@ -432,14 +439,14 @@
             <p class="font-pixel text-[9px] text-bn-yellow tracking-[0.3em] mb-4">LIVE CHAOS</p>
             <h2 class="font-display text-3xl sm:text-5xl text-cz-cream">Chart</h2>
           </div>
-          <a href="https://dexscreener.com/bsc/TBA" target="_blank" rel="noopener noreferrer" class="font-pixel text-[9px] text-cz-peach hover:text-bn-yellow transition-colors">
-            OPEN DEXSCREENER →
+          <a href="https://dexscreener.com/bsc/0x584d41b0f6cfaf412b9aab613186c7ef58007777" target="_blank" rel="noopener noreferrer" class="font-pixel text-[9px] text-cz-peach hover:text-bn-yellow transition-colors whitespace-nowrap">
+            OPEN DEXSCREENER &gt;&gt;
           </a>
         </div>
 
         <div class="pixel-frame bg-bn-deep overflow-hidden">
           <div id="dexscreener-embed">
-            <iframe src="https://dexscreener.com/bsc/TBA?embed=1&loadChartSettings=0&trades=0&tabs=0&info=0&chartLeftToolbar=0&chartTheme=dark&theme=dark&chartStyle=0&chartType=usd&interval=15" title="Dexscreener chart"></iframe>
+            <iframe src="https://dexscreener.com/bsc/0x584d41b0f6cfaf412b9aab613186c7ef58007777?embed=1&loadChartSettings=0&trades=0&tabs=0&info=0&chartLeftToolbar=0&chartTheme=dark&theme=dark&chartStyle=0&chartType=usd&interval=15" title="Dexscreener chart"></iframe>
           </div>
         </div>
       </div>
@@ -449,7 +456,7 @@
   <footer class="relative z-10 border-t border-bn-yellow/20 bg-bn-deep">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 py-10 flex flex-col sm:flex-row items-center justify-between gap-6">
       <div class="flex items-center gap-3">
-        <img src="logo.png" alt="" class="h-10 w-auto bg-[#C9A227]" />
+        <img src="logo.png" alt="" class="pixelated h-10 w-auto bg-[#C9A227]" />
         <div>
           <p class="font-display text-bn-yellow text-sm">LOOOOOONG CZ</p>
           <p class="text-xs text-cz-peach">$LOOOOOONG CZ · BNB Chain</p>
@@ -469,7 +476,7 @@
   </div>
 
   <script>
-    const CA = "TBA";
+    const CA = "0x584d41b0f6cfaf412b9aab613186c7ef58007777";
     const copyBtn = document.getElementById("copy-ca");
     const toast = document.getElementById("toast");
 
