@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LOOOOOONG CZ | $LOOOOOONG CZ</title>
+  <meta name="description" content="LOOOOOONG CZ stretches crypto meme energy to infinity, bringing endless vibes, massive memes, and moonbound chaos." />
+  <meta property="og:title" content="LOOOOOONG CZ | $LOOOOOONG CZ" />
+  <meta property="og:description" content="LOOOOOONG CZ stretches crypto meme energy to infinity, bringing endless vibes, massive memes, and moonbound chaos." />
+  <meta property="og:image" content="banner.jpg" />
+  <link rel="icon" href="logo.png" type="image/png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Press+Start+2P&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            bn: {
+              yellow: "#F0B90B",
+              gold: "#E6B422",
+              dark: "#0B0E11",
+              navy: "#0C1A33",
+              deep: "#08101F",
+              panel: "#12203A",
+              line: "#1E3A5F",
+            },
+            cz: {
+              mustard: "#C9A227",
+              peach: "#E8C4A0",
+              skin: "#F5D6B8",
+              glasses: "#E8943A",
+              cream: "#F8EBD8",
+              ink: "#1A1208",
+            },
+          },
+          fontFamily: {
+            pixel: ['"Press Start 2P"', "cursive"],
+            display: ['"Bungee"', "sans-serif"],
+            body: ['"Space Grotesk"', "sans-serif"],
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    :root {
+      --bn-yellow: #f0b90b;
+      --bn-navy: #0c1a33;
+      --cz-peach: #e8c4a0;
+      --cz-mustard: #c9a227;
+      --cz-glasses: #e8943a;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: "Space Grotesk", sans-serif;
+      background: #0b0e11;
+      color: #f8ebd8;
+      overflow-x: hidden;
+    }
+
+    ::selection {
+      background: var(--bn-yellow);
+      color: #0b0e11;
+    }
+
+    ::-webkit-scrollbar { width: 10px; }
+    ::-webkit-scrollbar-track { background: #0b0e11; }
+    ::-webkit-scrollbar-thumb {
+      background: var(--bn-yellow);
+      border: 2px solid #0b0e11;
+    }
+
+    .pixel-grid {
+      background-image:
+        linear-gradient(rgba(240, 185, 11, 0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(240, 185, 11, 0.04) 1px, transparent 1px);
+      background-size: 28px 28px;
+    }
+
+    .hero-banner {
+      background-image:
+        linear-gradient(90deg, rgba(8, 16, 31, 0.92) 0%, rgba(12, 26, 51, 0.72) 42%, rgba(12, 26, 51, 0.18) 100%),
+        url("banner.jpg");
+      background-size: cover;
+      background-position: center;
+    }
+
+    .gold-glow {
+      box-shadow:
+        0 0 0 1px rgba(240, 185, 11, 0.35),
+        0 0 28px rgba(240, 185, 11, 0.18),
+        0 0 80px rgba(232, 148, 58, 0.12);
+    }
+
+    .pixel-frame {
+      box-shadow:
+        6px 0 0 0 #c9a227,
+        -6px 0 0 0 #c9a227,
+        0 6px 0 0 #c9a227,
+        0 -6px 0 0 #c9a227,
+        0 0 40px rgba(240, 185, 11, 0.22);
+    }
+
+    .pixel-btn {
+      box-shadow:
+        4px 0 0 0 #8a6a08,
+        0 4px 0 0 #8a6a08,
+        4px 4px 0 0 #8a6a08;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    .pixel-btn:hover {
+      transform: translate(2px, 2px);
+      box-shadow:
+        2px 0 0 0 #8a6a08,
+        0 2px 0 0 #8a6a08,
+        2px 2px 0 0 #8a6a08;
+    }
+
+    .pixel-btn-ghost {
+      box-shadow:
+        4px 0 0 0 #c9a227,
+        0 4px 0 0 #c9a227,
+        4px 4px 0 0 #c9a227;
+    }
+
+    .pixel-btn-ghost:hover {
+      transform: translate(2px, 2px);
+      box-shadow:
+        2px 0 0 0 #c9a227,
+        0 2px 0 0 #c9a227,
+        2px 2px 0 0 #c9a227;
+    }
+
+    .diamond {
+      width: 18px;
+      height: 18px;
+      background: transparent;
+      border: 1.5px solid var(--bn-yellow);
+      transform: rotate(45deg);
+      opacity: 0.55;
+    }
+
+    .ticker-track {
+      animation: marquee 28s linear infinite;
+    }
+
+    @keyframes marquee {
+      from { transform: translateX(0); }
+      to { transform: translateX(-50%); }
+    }
+
+    @keyframes stretch {
+      0%, 100% { transform: scaleY(1); }
+      50% { transform: scaleY(1.12); }
+    }
+
+    @keyframes floaty {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-14px); }
+    }
+
+    @keyframes pulse-gold {
+      0%, 100% { opacity: 0.4; }
+      50% { opacity: 1; }
+    }
+
+    @keyframes dash {
+      to { stroke-dashoffset: -240; }
+    }
+
+    .stretch-mascot {
+      animation: stretch 4.5s ease-in-out infinite;
+      transform-origin: bottom center;
+    }
+
+    .float-mascot {
+      animation: floaty 5.5s ease-in-out infinite;
+    }
+
+    .orbit-line {
+      stroke-dasharray: 8 12;
+      animation: dash 8s linear infinite;
+    }
+
+    .step-card:hover .step-num {
+      color: #0b0e11;
+      background: var(--bn-yellow);
+    }
+
+    #dexscreener-embed {
+      position: relative;
+      width: 100%;
+      padding-bottom: 125%;
+    }
+
+    @media (min-width: 1400px) {
+      #dexscreener-embed { padding-bottom: 65%; }
+    }
+
+    @media (min-width: 768px) and (max-width: 1399px) {
+      #dexscreener-embed { padding-bottom: 80%; }
+    }
+
+    #dexscreener-embed iframe {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      border: 0;
+    }
+
+    .toast {
+      transform: translateY(20px);
+      opacity: 0;
+      pointer-events: none;
+      transition: all 0.25s ease;
+    }
+
+    .toast.show {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  </style>
+</head>
+<body class="bg-bn-dark">
+  <div class="pointer-events-none fixed inset-0 pixel-grid z-0"></div>
+
+  <svg class="pointer-events-none fixed inset-0 z-0 w-full h-full opacity-40" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="goldStroke" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#F0B90B" stop-opacity="0.5" />
+        <stop offset="100%" stop-color="#E8943A" stop-opacity="0.15" />
+      </linearGradient>
+    </defs>
+    <path class="orbit-line" d="M-40,120 C220,40 480,220 820,80 S1400,200 1800,40" fill="none" stroke="url(#goldStroke)" stroke-width="1.2" />
+    <path class="orbit-line" d="M-20,520 C300,400 620,640 980,480 S1500,600 1900,420" fill="none" stroke="url(#goldStroke)" stroke-width="1" />
+  </svg>
+
+  <header class="fixed top-0 inset-x-0 z-50 border-b border-[#F0B90B]/20 bg-[#0B0E11]/80 backdrop-blur-md">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 h-[72px] flex items-center justify-between gap-4">
+      <a href="#top" class="flex items-center gap-3 min-w-0">
+        <img src="logo.png" alt="LOOOOOONG CZ logo" class="h-12 w-auto pixel-frame bg-[#C9A227]" />
+        <div class="min-w-0">
+          <p class="font-display text-bn-yellow text-sm sm:text-base tracking-wider leading-none truncate">LOOOOOONG CZ</p>
+          <p class="font-pixel text-[8px] text-cz-peach mt-1 tracking-widest">$LOOOOOONG CZ</p>
+        </div>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-8 font-pixel text-[9px] text-cz-peach">
+        <a href="#about" class="hover:text-bn-yellow transition-colors">ABOUT</a>
+        <a href="#howtobuy" class="hover:text-bn-yellow transition-colors">HOW TO BUY</a>
+        <a href="#chart" class="hover:text-bn-yellow transition-colors">CHART</a>
+      </nav>
+
+      <div class="flex items-center gap-2 sm:gap-3">
+        <a href="https://x.com/LOOOOOONGCZ" target="_blank" rel="noopener noreferrer" class="h-10 w-10 overflow-hidden border-2 border-bn-yellow hover:scale-105 transition-transform" aria-label="Twitter / X">
+          <img src="x.png" alt="X" class="h-full w-full object-cover" />
+        </a>
+        <a href="https://flap.sh/bnb/TBA" target="_blank" rel="noopener noreferrer" class="pixel-btn hidden sm:inline-flex items-center bg-bn-yellow text-cz-ink font-pixel text-[9px] px-4 py-3">
+          BUY NOW
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top" class="relative z-10">
+    <section class="hero-banner min-h-screen pt-24 pb-16 flex items-end">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 w-full grid lg:grid-cols-[1.15fr_0.85fr] gap-10 items-end">
+        <div class="pb-6">
+          <div class="inline-flex items-center gap-3 mb-6">
+            <span class="diamond"></span>
+            <span class="font-pixel text-[8px] sm:text-[10px] text-bn-yellow tracking-[0.35em]">BNB CHAIN MEME</span>
+            <span class="diamond"></span>
+          </div>
+
+          <h1 class="font-display leading-[0.9] text-cz-cream">
+            <span class="block text-[clamp(2.1rem,8vw,6.4rem)] tracking-[0.08em] text-bn-yellow drop-shadow-[0_0_24px_rgba(240,185,11,0.35)]">LOOOOOONG</span>
+            <span class="block text-[clamp(2.6rem,10vw,7.2rem)] tracking-[0.18em]">CZ</span>
+          </h1>
+
+          <p class="mt-6 max-w-xl text-lg sm:text-xl text-cz-peach leading-relaxed">
+            LOOOOOONG CZ stretches crypto meme energy to infinity, bringing endless vibes, massive memes, and moonbound chaos.
+          </p>
+
+          <div class="mt-8 gold-glow bg-bn-deep/80 border border-bn-yellow/40 p-3 sm:p-4 max-w-xl">
+            <p class="font-pixel text-[8px] text-bn-yellow mb-2 tracking-widest">CONTRACT ADDRESS</p>
+            <div class="flex items-center gap-2">
+              <code id="ca-text" class="flex-1 truncate font-body text-sm sm:text-base text-cz-skin">TBA</code>
+              <button id="copy-ca" type="button" class="shrink-0 bg-bn-yellow text-cz-ink font-pixel text-[8px] px-3 py-2 pixel-btn">
+                COPY
+              </button>
+            </div>
+          </div>
+
+          <div class="mt-6 flex flex-wrap gap-3">
+            <a href="https://flap.sh/bnb/TBA" target="_blank" rel="noopener noreferrer" class="pixel-btn inline-flex items-center justify-center bg-bn-yellow text-cz-ink font-pixel text-[10px] px-6 py-4">
+              BUY NOW
+            </a>
+            <a href="https://dexscreener.com/bsc/TBA" target="_blank" rel="noopener noreferrer" class="pixel-btn pixel-btn-ghost inline-flex items-center justify-center bg-transparent text-bn-yellow border border-bn-yellow font-pixel text-[10px] px-6 py-4">
+              CHART
+            </a>
+            <a href="#howtobuy" class="inline-flex items-center justify-center text-cz-peach font-pixel text-[10px] px-4 py-4 hover:text-bn-yellow transition-colors">
+              HOW TO BUY →
+            </a>
+          </div>
+        </div>
+
+        <div class="hidden lg:flex justify-center items-end pb-4">
+          <div class="relative float-mascot">
+            <div class="absolute -inset-8 rounded-full bg-bn-yellow/10 blur-3xl"></div>
+            <img src="logo.png" alt="LOOOOOONG CZ mascot" class="relative stretch-mascot h-[62vh] max-h-[720px] w-auto pixel-frame bg-[#C9A227]" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="border-y border-bn-yellow/30 bg-bn-yellow overflow-hidden">
+      <div class="ticker-track flex w-max whitespace-nowrap py-3">
+        <div class="flex items-center gap-8 font-pixel text-[10px] text-cz-ink px-4">
+          <span>LOOOOOONG CZ</span><span>✦</span>
+          <span>$LOOOOOONG CZ</span><span>✦</span>
+          <span>ENDLESS VIBES</span><span>✦</span>
+          <span>MASSIVE MEMES</span><span>✦</span>
+          <span>MOONBOUND CHAOS</span><span>✦</span>
+          <span>STRETCHED TO INFINITY</span><span>✦</span>
+          <span>POWERED BY BNB</span><span>✦</span>
+          <span>LOOOOOONG CZ</span><span>✦</span>
+          <span>$LOOOOOONG CZ</span><span>✦</span>
+          <span>ENDLESS VIBES</span><span>✦</span>
+          <span>MASSIVE MEMES</span><span>✦</span>
+          <span>MOONBOUND CHAOS</span><span>✦</span>
+          <span>STRETCHED TO INFINITY</span><span>✦</span>
+          <span>POWERED BY BNB</span><span>✦</span>
+        </div>
+      </div>
+    </div>
+
+    <section id="about" class="relative py-20 sm:py-28">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+          <div class="relative">
+            <div class="absolute -top-4 -left-4 diamond"></div>
+            <div class="absolute -bottom-4 -right-4 diamond"></div>
+            <img src="banner.jpg" alt="LOOOOOONG CZ banner" class="w-full pixel-frame object-cover" />
+          </div>
+
+          <div>
+            <p class="font-pixel text-[9px] text-bn-yellow tracking-[0.3em] mb-4">THE INFINITE STRETCH</p>
+            <h2 class="font-display text-3xl sm:text-5xl text-cz-cream leading-tight">
+              Too long.<br />
+              <span class="text-bn-yellow">Never enough.</span>
+            </h2>
+            <p class="mt-6 text-lg text-cz-peach leading-relaxed">
+              LOOOOOONG CZ stretches crypto meme energy to infinity, bringing endless vibes, massive memes, and moonbound chaos. One elongated legend. One BNB-powered meme. Zero chill, maximum length.
+            </p>
+
+            <div class="mt-8 grid grid-cols-2 gap-3">
+              <div class="bg-bn-panel/80 border border-bn-yellow/25 p-4">
+                <p class="font-pixel text-[8px] text-cz-glasses mb-2">NAME</p>
+                <p class="font-display text-bn-yellow text-sm sm:text-base">LOOOOOONG CZ</p>
+              </div>
+              <div class="bg-bn-panel/80 border border-bn-yellow/25 p-4">
+                <p class="font-pixel text-[8px] text-cz-glasses mb-2">SYMBOL</p>
+                <p class="font-display text-bn-yellow text-sm sm:text-base">LOOOOOONG CZ</p>
+              </div>
+              <div class="bg-bn-panel/80 border border-bn-yellow/25 p-4">
+                <p class="font-pixel text-[8px] text-cz-glasses mb-2">CHAIN</p>
+                <p class="font-display text-cz-skin text-sm sm:text-base">BNB SMART CHAIN</p>
+              </div>
+              <div class="bg-bn-panel/80 border border-bn-yellow/25 p-4">
+                <p class="font-pixel text-[8px] text-cz-glasses mb-2">LENGTH</p>
+                <p class="font-display text-cz-skin text-sm sm:text-base">INFINITE</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="howtobuy" class="relative py-20 sm:py-28 bg-gradient-to-b from-bn-deep to-bn-navy">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6">
+        <div class="text-center max-w-3xl mx-auto">
+          <p class="font-pixel text-[9px] text-bn-yellow tracking-[0.3em] mb-4">4 STEPS TO INFINITY</p>
+          <h2 class="font-display text-3xl sm:text-5xl text-cz-cream">How to Buy</h2>
+          <p class="mt-4 text-cz-peach text-lg">Grab $LOOOOOONG CZ with BNB and stretch your bag to the moon.</p>
+        </div>
+
+        <div class="mt-14 grid sm:grid-cols-2 xl:grid-cols-4 gap-5">
+          <article class="step-card group bg-bn-panel border border-bn-yellow/20 p-6 hover:border-bn-yellow/70 transition-colors">
+            <div class="step-num font-pixel text-[11px] w-12 h-12 flex items-center justify-center bg-cz-mustard/20 text-bn-yellow border border-bn-yellow/40 mb-6 transition-colors">01</div>
+            <h3 class="font-display text-xl text-bn-yellow mb-3">Get a Wallet</h3>
+            <p class="text-cz-peach leading-relaxed">Install MetaMask or Trust Wallet. Switch the network to BNB Smart Chain so you are ready for the stretch.</p>
+          </article>
+
+          <article class="step-card group bg-bn-panel border border-bn-yellow/20 p-6 hover:border-bn-yellow/70 transition-colors">
+            <div class="step-num font-pixel text-[11px] w-12 h-12 flex items-center justify-center bg-cz-mustard/20 text-bn-yellow border border-bn-yellow/40 mb-6 transition-colors">02</div>
+            <h3 class="font-display text-xl text-bn-yellow mb-3">Load BNB</h3>
+            <p class="text-cz-peach leading-relaxed">Buy BNB on Binance or another exchange, then send it to your wallet on BNB Smart Chain.</p>
+          </article>
+
+          <article class="step-card group bg-bn-panel border border-bn-yellow/20 p-6 hover:border-bn-yellow/70 transition-colors">
+            <div class="step-num font-pixel text-[11px] w-12 h-12 flex items-center justify-center bg-cz-mustard/20 text-bn-yellow border border-bn-yellow/40 mb-6 transition-colors">03</div>
+            <h3 class="font-display text-xl text-bn-yellow mb-3">Open Flap.sh</h3>
+            <p class="text-cz-peach leading-relaxed">Hit Buy Now, connect your wallet, and paste the $LOOOOOONG CZ contract address when it goes live.</p>
+          </article>
+
+          <article class="step-card group bg-bn-panel border border-bn-yellow/20 p-6 hover:border-bn-yellow/70 transition-colors">
+            <div class="step-num font-pixel text-[11px] w-12 h-12 flex items-center justify-center bg-cz-mustard/20 text-bn-yellow border border-bn-yellow/40 mb-6 transition-colors">04</div>
+            <h3 class="font-display text-xl text-bn-yellow mb-3">Swap & Stretch</h3>
+            <p class="text-cz-peach leading-relaxed">Swap BNB for $LOOOOOONG CZ, confirm the transaction, and join the endless, moonbound chaos.</p>
+          </article>
+        </div>
+
+        <div class="mt-10 flex flex-wrap justify-center gap-3">
+          <a href="https://flap.sh/bnb/TBA" target="_blank" rel="noopener noreferrer" class="pixel-btn inline-flex bg-bn-yellow text-cz-ink font-pixel text-[10px] px-6 py-4">BUY NOW</a>
+          <a href="https://dexscreener.com/bsc/TBA" target="_blank" rel="noopener noreferrer" class="pixel-btn pixel-btn-ghost inline-flex bg-transparent text-bn-yellow border border-bn-yellow font-pixel text-[10px] px-6 py-4">CHART</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="chart" class="relative py-20 sm:py-28">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6">
+        <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-8">
+          <div>
+            <p class="font-pixel text-[9px] text-bn-yellow tracking-[0.3em] mb-4">LIVE CHAOS</p>
+            <h2 class="font-display text-3xl sm:text-5xl text-cz-cream">Chart</h2>
+          </div>
+          <a href="https://dexscreener.com/bsc/TBA" target="_blank" rel="noopener noreferrer" class="font-pixel text-[9px] text-cz-peach hover:text-bn-yellow transition-colors">
+            OPEN DEXSCREENER →
+          </a>
+        </div>
+
+        <div class="pixel-frame bg-bn-deep overflow-hidden">
+          <div id="dexscreener-embed">
+            <iframe src="https://dexscreener.com/bsc/TBA?embed=1&loadChartSettings=0&trades=0&tabs=0&info=0&chartLeftToolbar=0&chartTheme=dark&theme=dark&chartStyle=0&chartType=usd&interval=15" title="Dexscreener chart"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="relative z-10 border-t border-bn-yellow/20 bg-bn-deep">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 py-10 flex flex-col sm:flex-row items-center justify-between gap-6">
+      <div class="flex items-center gap-3">
+        <img src="logo.png" alt="" class="h-10 w-auto bg-[#C9A227]" />
+        <div>
+          <p class="font-display text-bn-yellow text-sm">LOOOOOONG CZ</p>
+          <p class="text-xs text-cz-peach">$LOOOOOONG CZ · BNB Chain</p>
+        </div>
+      </div>
+      <p class="text-center text-sm text-cz-peach/80 max-w-md">
+        Endless vibes. Massive memes. Moonbound chaos. Not financial advice — just a very, very long CZ.
+      </p>
+      <a href="https://x.com/LOOOOOONGCZ" target="_blank" rel="noopener noreferrer" class="h-11 w-11 overflow-hidden border-2 border-bn-yellow" aria-label="Twitter / X">
+        <img src="x.png" alt="X" class="h-full w-full object-cover" />
+      </a>
+    </div>
+  </footer>
+
+  <div id="toast" class="toast fixed bottom-6 left-1/2 -translate-x-1/2 z-[80] bg-bn-yellow text-cz-ink font-pixel text-[9px] px-5 py-3 pixel-frame">
+    CA COPIED
+  </div>
+
+  <script>
+    const CA = "TBA";
+    const copyBtn = document.getElementById("copy-ca");
+    const toast = document.getElementById("toast");
+
+    async function copyAddress() {
+      try {
+        await navigator.clipboard.writeText(CA);
+      } catch (err) {
+        const area = document.createElement("textarea");
+        area.value = CA;
+        document.body.appendChild(area);
+        area.select();
+        document.execCommand("copy");
+        area.remove();
+      }
+      toast.classList.add("show");
+      copyBtn.textContent = "COPIED";
+      setTimeout(function () {
+        toast.classList.remove("show");
+        copyBtn.textContent = "COPY";
+      }, 1600);
+    }
+
+    copyBtn.addEventListener("click", copyAddress);
+  </script>
+</body>
+</html>
